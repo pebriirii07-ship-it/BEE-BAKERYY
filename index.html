@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Corner Bakery - Caffe & Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ========== NAVIGASI ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#beranda" class="logo">
+                <span class="logo-icon">🧁</span>
+                Sweet Corner Bakery
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#beranda" class="active">Beranda</a></li>
+                <li><a href="#katalog">Katalog</a></li>
+                <li><a href="#detail">Detail</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== SECTION 1: BERANDA ========== -->
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Selamat Datang di Sweet Corner Bakery</h1>
+                <p class="hero-subtitle">Welcome to Sweet Corner Bakery</p>
+                <p class="hero-desc">
+                    Bukan sekadar roti! Kami menyajikan aneka pastry, kue artisan, kopi spesial, 
+                    dan makanan ringan kekinian. Lokasi strategis dekat universitas, di pinggir jalan utama — 
+                    tempat perfect buat nongkrong, meeting, atau kerja tugas.
+                </p>
+                <p class="hero-desc-en">
+                    <em>Not just bread! We serve various pastries, artisan cakes, specialty coffee, 
+                    and trendy snacks. Strategic location near the university, on the main road — 
+                    perfect spot for hangout, meetings, or doing assignments.</em>
+                </p>
+                <a href="#katalog" class="btn-primary">Lihat Menu Kami →</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=500" alt="Caffe Bakery Interior" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan / Why Choose Us -->
+    <section class="features" id="keunggulan">
+        <div class="container">
+            <h2>Mengapa Memilih Kami? / Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>Lokasi Strategis</h3>
+                    <p>Dekat Universitas, pinggir jalan utama. Mudah diakses pejalan kaki dan kendaraan.</p>
+                    <small><em>Near university, main road. Easy access.</em></small>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🥐</div>
+                    <h3>Produk Beragam</h3>
+                    <p>Tidak hanya roti! Tersedia kue, pastry, kopi, teh, dan minuman segar lainnya.</p>
+                    <small><em>Not just bread! Cakes, pastries, coffee, tea & fresh beverages.</em></small>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Harga ramah di kantong mahasiswa. Promo spesial setiap minggunya!</p>
+                    <small><em>Student-friendly prices. Weekly special promos!</em></small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Unggulan -->
+    <section class="featured-menu">
+        <div class="container">
+            <h2>Menu Unggulan / Featured Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=300" alt="Butter Croissant" loading="lazy">
+                    <div class="menu-info">
+                        <h3>Butter Croissant</h3>
+                        <p>Lembut, berlapis, dan buttery. Fresh from oven setiap pagi!</p>
+                        <span class="price">Rp 25.000</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=300" alt="Caffe Latte" loading="lazy">
+                    <div class="menu-info">
+                        <h3>Caffe Latte</h3>
+                        <p>Kopi susu hangat dengan foam lembut. Perfect for morning boost!</p>
+                        <span class="price">Rp 28.000</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300" alt="Chocolate Lava Cake" loading="lazy">
+                    <div class="menu-info">
+                        <h3>Chocolate Lava Cake</h3>
+                        <p>Coklat meleleh di tengah, disajikan hangat dengan es krim vanilla.</p>
+                        <span class="price">Rp 35.000</span>
+                    </div>
+                </div>
+            </div>
+            <a href="#katalog" class="btn-secondary">Lihat Semua Menu →</a>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 2: KATALOG ========== -->
+    <section class="catalog" id="katalog">
+        <div class="container">
+            <h1>Katalog Menu / Menu Catalog</h1>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="filterCategory">Kategori:</label>
+                    <select id="filterCategory">
+                        <option value="all">Semua / All</option>
+                        <option value="bakery">Bakery / Roti</option>
+                        <option value="pastry">Pastry</option>
+                        <option value="cake">Cake / Kue</option>
+                        <option value="beverage">Minuman</option>
+                        <option value="snack">Makanan Ringan</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterPrice">Harga:</label>
+                    <select id="filterPrice">
+                        <option value="all">Semua / All</option>
+                        <option value="low">< Rp 20.000</option>
+                        <option value="mid">Rp 20.000 - 35.000</option>
+                        <option value="high">> Rp 35.000</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Dirender oleh JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 3: DETAIL PRODUK ========== -->
+    <section class="product-detail" id="detail">
+        <div class="container">
+            <h1 class="section-title">Detail Produk / Product Detail</h1>
+            
+            <!-- Gallery -->
+            <div class="gallery">
+                <div class="main-image">
+                    <img id="mainImage" src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=600" alt="Produk Unggulan" loading="lazy">
+                </div>
+                <div class="thumbnail-grid">
+                    <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=150" alt="Thumb 1" onclick="changeMainImage(this.src)" class="active">
+                    <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=150" alt="Thumb 2" onclick="changeMainImage(this.src)">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=150" alt="Thumb 3" onclick="changeMainImage(this.src)">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=150" alt="Thumb 4" onclick="changeMainImage(this.src)">
+                </div>
+            </div>
+
+            <!-- Info Produk -->
+            <div class="product-info-detail">
+                <h2 id="detailName">Butter Croissant</h2>
+                <p class="product-category">Kategori: <span id="detailCategory">Bakery</span></p>
+                <div class="product-price-detail" id="detailPrice">Rp 25.000</div>
+
+                <div class="product-benefits">
+                    <h3>Benefit / Keunggulan:</h3>
+                    <ul id="detailBenefits">
+                        <li>✅ Fresh from oven setiap pagi</li>
+                        <li>✅ Menggunakan butter import premium</li>
+                        <li>✅ Tekstur renyah di luar, lembut di dalam</li>
+                        <li>✅ Cocok untuk sarapan atau teman ngopi</li>
+                    </ul>
+                </div>
+
+                <div class="product-specs">
+                    <h3>Spesifikasi / Specifications:</h3>
+                    <p>📏 Berat: 120gr</p>
+                    <p>🔥 Kalori: 280 kkal</p>
+                    <p>⏰ Best consume: 24 jam</p>
+                    <p>🌡️ Suhu terbaik: Hangat / Suhu ruang</p>
+                </div>
+
+                <button class="btn-primary" onclick="scrollToBooking()">
+                    Booking Sekarang / Book Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SECTION 4: BOOKING FORM ========== -->
+    <section class="booking-section" id="booking">
+        <div class="container">
+            <h2>Form Booking Bakery Room</h2>
+            <p>Isi form di bawah untuk reservasi ruangan dan pre-order menu favoritmu!</p>
+            <p><em>Fill the form below to reserve our bakery room and pre-order your favorite menu!</em></p>
+
+            <form id="bookingFormElement" onsubmit="handleBooking(event)">
+                <div class="form-group">
+                    <label for="fullName">Nama Lengkap / Full Name *</label>
+                    <input type="text" id="fullName" required placeholder="Masukkan nama lengkap Anda">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" required placeholder="contoh@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon / Phone Number *</label>
+                    <input type="tel" id="phone" required placeholder="+62 812-3456-7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="selectedProduct">Makanan yang Dipilih / Selected Menu</label>
+                    <select id="selectedProduct">
+                        <option value="">-- Pilih Menu --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Jumlah / Quantity</label>
+                    <input type="number" id="quantity" min="1" max="10" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingDate">Tanggal Booking / Booking Date *</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingTime">Jam / Time *</label>
+                    <input type="time" id="bookingTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Catatan Tambahan / Additional Notes</label>
+                    <textarea id="notes" rows="3" placeholder="Alergi kacang, request meja dekat jendela, dll."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary btn-submit">Kirim Booking / Submit Booking</button>
+            </form>
+
+            <!-- Success Message -->
+            <div id="bookingSuccess" class="booking-success" style="display:none;">
+                <h3>✅ Booking Berhasil! / Booking Successful!</h3>
+                <p>Terima kasih telah melakukan booking. Tim kami akan menghubungi Anda dalam 1×24 jam.</p>
+                <p><em>Thank you for your booking. Our team will contact you within 24 hours.</em></p>
+                <button onclick="resetBooking()" class="btn-secondary">Buat Booking Baru / New Booking</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sweet Corner Bakery</h3>
+                    <p>Jl. Pendidikan No. 123, Dekat Universitas</p>
+                    <p>Buka: 07:00 - 22:00 WIB</p>
+                    <p><em>Open: 7 AM - 10 PM</em></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak / Contact</h3>
+                    <p>📞 +62 812-3456-7890</p>
+                    <p>📧 hello@sweetcornerbakery.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami / Follow Us</h3>
+                    <p>📸 Instagram: @sweetcornerbakery</p>
+                    <p>🎵 TikTok: @sweetcornerbakery</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Sweet Corner Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
